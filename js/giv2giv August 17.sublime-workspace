@@ -1,0 +1,669 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/ui/landing.html",
+			"settings":
+			{
+				"buffer_size": 5462,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/ui/FAQ.html",
+			"settings":
+			{
+				"buffer_size": 21245,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "endowments.js",
+			"settings":
+			{
+				"buffer_size": 29015,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/ui/dashboard.html",
+			"settings":
+			{
+				"buffer_size": 1699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/app.html",
+			"settings":
+			{
+				"buffer_size": 12839,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/ui/donor.html",
+			"settings":
+			{
+				"buffer_size": 11658,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webui.js",
+			"settings":
+			{
+				"buffer_size": 25710,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/ui/endowments.html",
+			"settings":
+			{
+				"buffer_size": 1554,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/timokrall/floobits/giv2giv/timo/ui/subscriptions.html",
+			"settings":
+			{
+				"buffer_size": 310,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/timokrall/floobits/giv2giv/timo",
+		"/Users/timokrall/floobits/giv2giv/timo/css",
+		"/Users/timokrall/floobits/giv2giv/timo/images",
+		"/Users/timokrall/floobits/giv2giv/timo/js",
+		"/Users/timokrall/floobits/giv2giv/timo/ui"
+	],
+	"file_history":
+	[
+		"/Users/timokrall/floobits/giv2giv/timo/css/g2g.css",
+		"/Users/timokrall/floobits/giv2giv/timo/ui/FAQ.html",
+		"/Users/timokrall/floobits/giv2giv/timo/js/charities.js",
+		"/Users/timokrall/floobits/giv2giv/timo/ui/receipt.html",
+		"/Users/timokrall/floobits/giv2giv/timo/ui/donor.html",
+		"/Users/timokrall/floobits/giv2giv/timo/js/dashboard.js",
+		"/Users/timokrall/floobits/giv2giv/timo/css/bootplus.css",
+		"/Users/timokrall/floobits/giv2giv/timo/js/maps.js",
+		"/Users/timokrall/floobits/giv2giv/timo/js/vendor.js",
+		"/Users/timokrall/floobits/giv2giv/timo/js/webui.js",
+		"/Users/timokrall/floobits/giv2giv/timo/js/utils.js",
+		"/Users/timokrall/floobits/giv2giv/timo/js/endowments.js",
+		"/Users/timokrall/floobits/giv2giv/timo/ui/landing.html",
+		"/Users/timokrall/floobits/giv2giv/timo/css/core.css",
+		"/Users/timokrall/floobits/giv2giv/timo/css/leaflet.css",
+		"/Users/timokrall/floobits/giv2giv/timo/app.html",
+		"/Users/timokrall/floobits/giv2giv/timo/ui/endowment_details.html",
+		"/Users/timokrall/floobits/giv2giv/timo/images/icons/credit-card-36-000000.png",
+		"/Users/timokrall/Downloads/jquery-accordion-master/js/jquery.easing.min.js",
+		"/Users/timokrall/Downloads/jquery-accordion-master/js/jquery.accordion.2.0.min.js",
+		"/Users/timokrall/Downloads/jquery-accordion-master/js/jquery.accordion.2.0.js",
+		"/Users/timokrall/Downloads/jquery-accordion-master/js/jquery-1.4.2.min.js",
+		"/Users/timokrall/floobits/giv2giv/timo/js/accordion.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fixed-column",
+			"team",
+			"mckinsey",
+			"Giv2",
+			"accordion",
+			"img",
+			"detailed",
+			"setup",
+			"col-md",
+			"history",
+			"forecast",
+			"&",
+			"subscriptions",
+			"account",
+			"loading data",
+			"subscriptions",
+			"statement",
+			"endowment",
+			"out",
+			"sign",
+			"fetchfeature",
+			"onstart",
+			"endowment",
+			"list.js",
+			"753",
+			"create-endowment-btn",
+			"find-endowment-btn",
+			"create-endowment-btn",
+			"dashboard.js",
+			"dashboard",
+			"weight",
+			"font weight",
+			"lato",
+			" ",
+			"lato",
+			"awesome",
+			"dashboard",
+			"landing",
+			"endowment",
+			"signin",
+			"landing",
+			"/signin",
+			"GLOBAL.DEBUG = true",
+			"GLOBAL.DEBUG",
+			"*/\n",
+			"landing",
+			"session",
+			"active session",
+			"landing",
+			"activesession",
+			"navtab",
+			"landing",
+			"numb",
+			"landing",
+			"landing-nav",
+			"landing",
+			"charities-nav",
+			"landing",
+			"FAQ",
+			"FQ",
+			"video",
+			"responsive",
+			"embed",
+			"embee",
+			"responsive",
+			"embed-responsive",
+			"responsive",
+			"embed-responsi",
+			"h2",
+			"fixed-",
+			"fixed-colum",
+			"fixed-column",
+			"primary-description",
+			"not-splash-image",
+			"row",
+			"primary-descript",
+			"primary",
+			"h1",
+			"col-xs-12",
+			"not-splash-image",
+			"col-xs-12",
+			"primary-description",
+			"h1",
+			"h2",
+			"h1",
+			"responsive",
+			"h1",
+			"btn-primary.active",
+			"btn-large",
+			"btn-large.active",
+			"btn-large",
+			"btn-success",
+			"button",
+			"btn",
+			"button",
+			"btn",
+			"btn-primary",
+			"btn-large",
+			"get started",
+			".btn",
+			"blue",
+			"button",
+			"3f",
+			"3f86c6",
+			"3399",
+			"3399cc",
+			"2015",
+			"helvetica",
+			"font-family",
+			"@import url",
+			"font-family",
+			"&",
+			"&ns",
+			"logo.png",
+			"img",
+			"charity-details-logo",
+			"img",
+			"image",
+			"img",
+			"step 1",
+			"&nbsp;",
+			"accordion",
+			"ready",
+			"js/",
+			"accordion",
+			"search endowments",
+			"large",
+			"btn large"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/ui/landing.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5435,
+								5435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1082.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/ui/FAQ.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3449,
+								3449
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1021.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "endowments.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9666,
+								9666
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4794.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/ui/dashboard.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/app.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7993,
+								7993
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2333.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/ui/donor.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								628,
+								628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "webui.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22958,
+								22958
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 11865.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"file": "/Users/timokrall/floobits/giv2giv/timo/images/giv2giv-team.png",
+					"semi_transient": true,
+					"stack_index": 2,
+					"type": "image"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/ui/endowments.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/timokrall/floobits/giv2giv/timo/ui/subscriptions.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "giv2giv August 17.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"endowmtn",
+				"js/endowments.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

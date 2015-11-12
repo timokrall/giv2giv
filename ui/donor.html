@@ -1,0 +1,262 @@
+<div class="row first-content last-content">
+	<div class="fixed-column">
+		<h2>My Charity Fund Dashboard</h2>
+		<div class="card-heading simple">
+			<ul class="nav nav-pills" data-toggle="tabs">
+				<li class="active"><a href="#overview">Overview</a></li>
+				<li><a href="#profile">Account Information</a></li>
+				<li><a href="#subscriptions">Endowments</a></li>
+				<li><a href="#statement">Donation Statement</a></li>
+				<li><a href="#history">History & Forecast</a></li>
+			</ul>
+		</div>
+		<div class="card-body">                   
+			<div class="tab-content">
+				<div class="tab-pane active" id="overview">
+
+					<br>
+
+					<h3>How to setup and manage your giv2giv funds</h3>
+
+					<br>
+
+				<!-- Begin accordion using Bootstrap -->
+				<!-- See http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-accordion.php -->
+
+				    <div id="accordion" class="panel-group">
+				        <div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h4 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><img src="images/creditcard.png" alt="How it Works" height="24" width="24">&nbsp; Step 1: Add your payment information</a>
+				                </h4>
+				            </div>
+				            <div id="collapseOne" class="panel-collapse collapse">
+				                <div class="panel-body">
+				                    <p>
+										<p>Before you can donate, you need to add your payment data.
+										<br><br>
+										<a href="#profile" class="btn btn-primary">Add my payment data</a>
+										</p>
+				                    </p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h4 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><img src="images/signal.png" alt="How it Works" height="24" width="24">&nbsp; Step 2: Create your endowment or support an existing one</a>
+				                </h4>
+				            </div>
+				            <div id="collapseTwo" class="panel-collapse collapse in">
+				                <div class="panel-body">
+				                    <p>
+										<p>giv2giv empowers you to launch your own endowment - but you do not have to. You can donate to existing endowments the same way you can donate to your own endowments.
+										<br> <br>
+										<a href="/" class="btn btn-primary find-endowment-btn">Find an Endowment</a>
+										<a href="#" class="btn btn-success create-endowment-btn">Create an Endowment</a>
+										</p>
+				                    </p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="panel panel-default">
+				            <div class="panel-heading">
+				                <h4 class="panel-title">
+				                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><img src="/images/child.png" alt="How it Works" height="24" width="18">&nbsp; &nbsp;Step 3: See how your impact for good develops over time</a>
+				                </h4>
+				            </div>
+				            <div id="collapseThree" class="panel-collapse collapse">
+				                <div class="panel-body">
+				                    <p>
+										<p>You can easily print a donation statement for all your giv2giv donations. With giv2giv you also receive reports on your donation balance, and automatic estimates of your future chartiable impact.
+										<br> <br>
+										<a href="#statement" class="btn btn-default">Print donation statement</a>
+										<a href="#history" class="btn btn-default">See donation history & projected impact</a>
+										</p>
+				                    </p>
+				                </div>
+				            </div>
+				        </div>
+				        </div>
+				</div>
+				<div class="tab-pane" id="history">
+					<div id="balanceHistory" class="text-center chart-center"><i class="fa fa-leaf fa-spin"></i>&nbsp;You have made no donation yet&hellip;</div>
+					<br>
+					<div id="balanceFuture" class="text-center chart-center"><i class="fa fa-leaf fa-spin"></i>&nbsp;You have made no donation yet&hellip;</div>
+				</div>
+				<div class="tab-pane" id="profile">
+					<!-- Profile Tab -->
+					<form id="donor-profile-form">
+						<!-- Donor Email -->
+						<div class="form-group">
+							<label for="donor-profile-email">Email</label>
+							<input type="text" id="donor-profile-email" placeholder="Email" class="form-control"/>
+						</div>
+						<!-- Donor Password -->
+						<div class="form-group">
+							<label for="donor-profile-password">Password</label>
+							<input type="password" id="donor-profile-password" placeholder="Password" class="form-control"/>
+						</div>
+						<!-- Name -->
+						<div class="form-group">
+							<label for="donor-profile-name">Name</label>
+							<input type="text" id="donor-profile-name" placeholder="Name" class="form-control"/>
+						</div>
+						<!-- Address -->
+						<div class="form-group">
+							<label for="donor-profile-address">Address</label>
+							<input type="text" id="donor-profile-address" placeholder="Address" class="form-control"/>
+						</div>
+						<!-- City -->
+						<div class="form-group">
+							<label for="donor-profile-city">City</label>
+							<input type="text" id="donor-profile-city" placeholder="City" class="form-control"/>
+						</div>
+						<!-- State -->
+						<div class="form-group">
+							<label for="donor-profile-state">State</label>
+								<select id="donor-profile-state">
+									<option value="" selected="selected">Select a State</option> 
+									<option value="AL">Alabama</option> 
+									<option value="AK">Alaska</option> 
+									<option value="AZ">Arizona</option> 
+									<option value="AR">Arkansas</option> 
+									<option value="CA">California</option> 
+									<option value="CO">Colorado</option> 
+									<option value="CT">Connecticut</option> 
+									<option value="DE">Delaware</option> 
+									<option value="DC">District Of Columbia</option> 
+									<option value="FL">Florida</option> 
+									<option value="GA">Georgia</option> 
+									<option value="HI">Hawaii</option> 
+									<option value="ID">Idaho</option> 
+									<option value="IL">Illinois</option> 
+									<option value="IN">Indiana</option> 
+									<option value="IA">Iowa</option> 
+									<option value="KS">Kansas</option> 
+									<option value="KY">Kentucky</option> 
+									<option value="LA">Louisiana</option> 
+									<option value="ME">Maine</option> 
+									<option value="MD">Maryland</option> 
+									<option value="MA">Massachusetts</option> 
+									<option value="MI">Michigan</option> 
+									<option value="MN">Minnesota</option> 
+									<option value="MS">Mississippi</option> 
+									<option value="MO">Missouri</option> 
+									<option value="MT">Montana</option> 
+									<option value="NE">Nebraska</option> 
+									<option value="NV">Nevada</option> 
+									<option value="NH">New Hampshire</option> 
+									<option value="NJ">New Jersey</option> 
+									<option value="NM">New Mexico</option> 
+									<option value="NY">New York</option> 
+									<option value="NC">North Carolina</option> 
+									<option value="ND">North Dakota</option> 
+									<option value="OH">Ohio</option> 
+									<option value="OK">Oklahoma</option> 
+									<option value="OR">Oregon</option> 
+									<option value="PA">Pennsylvania</option> 
+									<option value="RI">Rhode Island</option> 
+									<option value="SC">South Carolina</option> 
+									<option value="SD">South Dakota</option> 
+									<option value="TN">Tennessee</option> 
+									<option value="TX">Texas</option> 
+									<option value="UT">Utah</option> 
+									<option value="VT">Vermont</option> 
+									<option value="VA">Virginia</option> 
+									<option value="WA">Washington</option> 
+									<option value="WV">West Virginia</option> 
+									<option value="WI">Wisconsin</option> 
+									<option value="WY">Wyoming</option>
+								</select>
+						</div>
+						<!-- Zip -->
+						<div class="form-group">
+							<label for="donor-profile-zip">Zip</label>
+							<input type="text" id="donor-profile-zip" placeholder="Zip" class="form-control"/>
+						</div>
+						<!-- Phone Number -->
+						<div class="form-group">
+							<label for="donor-profile-phone">Phone Number</label>
+							<input type="text" id="donor-profile-phone" placeholder="Phone Number" class="form-control"/>
+						</div>
+						<!-- Contact Preferences -->
+						<div class="form-group">
+							<input type="checkbox" id="donor-profile-contact"/>
+							<label for="donor-profile-contact">Contact me with updates about giv2giv</label>
+						</div>
+
+						<!-- Update Profile Button -->
+						<div class="form-group">
+							<button id="update-donor-btn" type="submit" data-loading-text="<i class='fa fa-leaf fa-spin'></i> Updating" class="btn btn-success">Update Profile</button>
+						</div>
+					</form>
+					<br>
+					<div id="payment-accounts-card" class="hide">
+						<table id="payment-accounts-table" class="table">
+							<thead>
+								<tr>
+									<th>Card Type</th>
+									<th>Last Four Digits</th>
+									<th>Expiration Date</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+						<p><a class="btn btn-success" data-toggle="modal" href="#add-payment-modal">Add Credit Card</a></p>
+					</div>
+					<!--
+					<script src="https://knoxpayments.com/merchant/knox.js" id="knox_payments_script" button_text="Connect Bank Account" api-key="8458_57251cca3e13ed05cd" recurring="ot" user_request="show_all" invoice_detail="Connect your bank account and save" response_url=""></script>
+					<div class="knox-payments-div" data-amount="0.01"></div>-->
+
+					<div id="no-payment-accounts-card" class="hide">
+						<h3>You haven't added any payment accounts yet.</h3>
+						<p><a class="btn btn-success" data-toggle="modal" href="#add-payment-modal">Add Payment Account</a></p>
+					</div>
+				</div>
+				<div class="tab-pane" id="statement">
+					<form id="donor-statement-form">
+						<div class="control-group">
+							<label class="control-label" for="donor-statement-year">Statement Year</label>
+							<div class="controls">
+								<select id="donor-statement-year">
+									<option value="2014" selected="selected">2014</option> 
+									<option value="2015">2015</option>
+								</select>
+							</div>
+				    </div>
+				    <br>
+						<div class="form-group">
+							<button id="donor-statement-button" class="btn btn-success">Display Statement</button>
+						</div>
+					</form>
+				</div>
+				<div class="row tab-pane" id="subscriptions">
+						<div class="col-md-12 text-center chart-center">
+						<div id="currentEndowments" class="text-center chart-center"><i class="fa fa-leaf fa-spin"></i>&nbsp;You have not supported endowments yet&hellip;</div>
+						<br>
+						<table id="current-subscriptions-table" class="table">
+							<thead>
+								<tr>
+									<th>Endowment</th>
+									<th>Current Balance</th>
+									<th>Currently Donating?</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td><i class="fa fa-leaf fa-spin"></i>&nbsp;There are no subscriptions to be displayed&hellip;</td></tr>
+							</tbody>
+						</table>
+						<br>
+						<div class="row last-content">
+							<div id="sub-endowments" class="col-xs-12 text-center chart-center">
+								<i class="fa fa-leaf fa-spin"></i>&nbsp;You have no active subscriptions&hellip;
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

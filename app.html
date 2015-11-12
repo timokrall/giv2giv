@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="Online foundations service revolutionizing personal philanthropy" name="description" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="title" content="giv2giv - Build a legacy" />
+	<meta name="description" content="Donate into an endowment, your endowment distributes to your favorite charities, every 90 days...Forever! (yes, like forever) giv2giv is a non-profit organization putting advanced investing tools to work for you and your causes.">
+	<meta charset="utf-8">
+
+	<title>giv2giv</title>
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
+	<!-- <link rel="stylesheet" href="/css/font-awesome.css" /> -->
+	<link rel="stylesheet" href="/css/bootstrap-social.css" />
+	<link rel="stylesheet" href="/css/g2g.css" />
+	<link rel="stylesheet" href="/css/select2.css" />
+	<link rel="stylesheet" href="/css/leaflet.css" />
+	<link rel="stylesheet" href="/css/typeahead.js-bootstrap.css" />
+	<!--<link rel="stylesheet" href="https://knoxpayments.com/merchant/knox.css">-->
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+</head>
+<body>
+<div id="wrap">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!-- Toggle navbar button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="/" class="navbar-brand">
+					<img src="images/logo.png" alt='giv2giv'/>
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="private-nav hide form-control input-lg typeahead" id="endowment-search" placeholder="Search Endowments">
+					</div>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<!-- Public Only Tabs -->
+					<li class="public-nav hide" id="pub-landing-nav"><a href="landing">How it works</a></li>
+					<li class="public-nav hide" id="pub-FAQ-nav"><a href="FAQ">FAQ</a></li>
+					<li class="public-nav hide" id="signin-nav"><a href="signin"><button class="btn btn-success">Sign In</button></a></li>
+					
+					<!-- Logged In Tabs -->
+					<li class="private-nav hide" id="landing-nav"><a href="landing">How it works</a></li>
+					<li class="private-nav hide" id="FAQ-nav"><a href="FAQ">FAQ</a></li>
+					<li class="private-nav hide" id="donor-nav">
+					<li class="private-nav hide" id="manage-btn"><a href="donor"><button class="btn btn-default">Manage my giv2giv funds</button></a></li>
+					<li class="private-nav hide" id="logout-btn"><a href="logout"><button class="btn btn-success">Logout</button></a></li>
+
+					<!--
+					<li class="dropdown private-nav hide">
+						<div class="dropdown-toggle" data-toggle="dropdown">My Profile</div>
+						<ul class="dropdown-menu" role="menu">
+							<li class="private-nav hide" id="dashboard-nav"><a href="dashboard">Dashboard</a></li>
+							<li><a href="subscriptions">Subscribed Endowments</a></li>
+							<li><a href="receipt">Donation History</a></li></li>
+							<li><a href="donor">Account Settings</a></li></li>
+						</ul>
+					</li>
+					-->
+				</ul>
+			</div>
+		</div>		
+	</nav>
+	
+	<div id="app-container" data-page-id="landing" class="container-fluid">
+		<div id="app-panel" class="hide"></div>
+
+		<div id="signup-panel" class="row hide last-content">
+			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 card registration">
+				<h2>Sign Up</h2>
+				<div class="checkbox">
+						<label>
+							<input type="checkbox" id="social-signup-accept-terms"> Accept <a id="social-terms-btn" href="#terms-modal" data-toggle="modal">terms and conditions?</a>
+						</label>
+					</div>
+					<!--
+				<button id="gplus-signup" class="btn btn-block btn-social btn-google-plus g-signin"
+		data-scope="https://www.googleapis.com/auth/plus.login"
+		data-clientid="YOUR_CLIENT_ID"
+		data-redirecturi="postmessage"
+		data-accesstype="offline"
+		data-cookiepolicy="single_host_origin"
+		data-callback="signInCallback">
+					<i class="fa fa-google-plus"></i> Sign Up with Google+
+				</button>
+-->
+				<button id="facebook-signup" class="btn btn-block btn-social btn-facebook">
+					<i class="fa fa-facebook"></i> Sign Up with Facebook
+				</button>
+
+				<p class="first-content flair-lines">or</p>
+				<h3 class="text-center">Sign Up with Email</h3>
+				<form role="form" id="signup-form" method="post">
+					<div class="form-group">
+						<label for="signup-name">Name</label>
+						<input type="text" class="form-control" id="signup-name" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="signup-email">Email Address</label>
+						<input type="text" class="form-control" id="signup-email" placeholder="Email Address">
+					</div>
+					<div class="form-group">
+						<label for="signup-password">Password</label>
+						<input type="password" class="form-control" id="signup-password" placeholder="Password"><br />
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="signup-accept-terms"> Accept <a id="terms-btn" href="#terms-modal" data-toggle="modal">terms and conditions?</a>
+						</label>
+					</div>
+					<button id="signup-btn" type="submit" data-loading-text="<i class='fa fa-leaf fa-spin'></i>&nbsp;Creating" class="btn btn-success">Create Account</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="signin-panel" class="row hide last-content">
+			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 card registration">
+				<h2>Sign In</h2>
+<!--
+				<button id="gplus-signin" class="btn btn-block btn-social btn-google-plus">
+					<i class="fa fa-google-plus"></i> Sign In with Google+
+				</button>
+-->
+				<button id="facebook-signin" class="btn btn-block btn-social btn-facebook" disabled>
+					<i class="fa fa-facebook"></i> Sign In with Facebook
+				</button>
+				<p class="first-content flair-lines">or</p>
+				<h3 class="text-center">Sign In with Email</h3>
+				<p id="signin-message"></p>
+				<form role="form" id="signin-form" method="post">
+					<div class="form-group">
+						<label for="signin-email">Email Address</label>
+						<input type="text" class="form-control" id="signin-email" placeholder="Email Address">
+					</div>
+					<div class="form-group">
+						<label for="signin-password">Password</label>
+						<input type="password" class="form-control" id="signin-password" placeholder="Password"><br />
+					</div>
+					<button id="signin-btn" data-loading-text="<i class='fa fa-leaf fa-spin'></i>&nbsp;Signing In" class="btn btn-primary" type="submit">
+						Sign in
+					</button>
+					<button id="reset-password-btn" class="btn btn-default">Reset My Password</button>
+					<br>&nbsp;
+					<p class="text-muted">New to giv2giv? <a href='#signup'>Create your free account.</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer>
+			<div class="container">
+				<div class="row">
+					<p class="text-muted">
+						<span>&copy; giv2giv, Inc. 2012-2015</span>
+					</p>
+				</div>
+			</div>
+	</footer>
+<div id="fb-root"></div>
+<!-- Modals -->
+<div id="modal-container"></div>
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	<script src="/js/vendor.js"></script>
+	<script src="/js/utils.js"></script>
+	<script src="/js/landing.js"></script>
+	<script src="/js/dashboard.js"></script>
+	<script src="/js/charities.js"></script>
+	<script src="/js/endowments.js"></script>
+	<script src="/js/donor.js"></script>
+	<script src="/js/numbers.js"></script>
+	<script src="/js/maps.js"></script>
+	<script src="/js/reset_password.js"></script>
+	<script src="/js/webui.js"></script>
+	<script src="//maps.google.com/maps/api/js?&sensor=false"></script>
+	<script>
+
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-30575602-1', 'giv2giv.org');
+		ga('send', 'pageview');
+
+		// Facebook Bits
+		window.fbAsyncInit = function() {
+			FB.getLoginStatus(function(response) {
+				if(response.status == 'connected') {
+					FB.api('/me', function(response) {
+
+						// Enable Button
+						$("#facebook-signin").prop('disabled', false);
+						$("#facebook-signin").html('<i id="facebook-signin" class="fa fa-facebook"></i> Sign In as ' + response.name);
+					});
+				} else {
+					// Enable Button
+					$("#facebook-signin").prop('disabled', false);
+					$("#facebook-signin").html('<i class="fa fa-facebook"></i> Sign Up with Facebook');
+				}
+			});
+		};
+
+		// Load the SDK asynchronously
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=642257835904820&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		if (navigator.geolocation) {
+  		navigator.geolocation.getCurrentPosition(showPosition);
+		}
+
+		function showPosition(position) {
+			$.cookie("latitude", position.coords.latitude);
+			$.cookie("longitude", position.coords.longitude);
+		}
+
+		// Twitter bits
+		window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+	</script>
+
+ 
+	<script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
+
+	<!-- begin olark code -->
+	<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]}); /* custom configuration goes here (www.olark.com/documentation) */ olark.identify('8756-683-10-7077');/*]]>*/</script><noscript><a href="https://www.olark.com/site/8756-683-10-7077/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="https://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript> <!-- end olark code -->
+
+</body>
+</html>
